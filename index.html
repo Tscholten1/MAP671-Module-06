@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>..</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff7f7;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: #3d3d3d;
+        }
+
+        section {
+            /* width: 960px; */
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 2.5em;
+            /* The em unit. 3x the current size */
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: black;
+            font-size: 1.25em;
+            letter-spacing: .04em;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        a {
+            color: #005daa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        #map {
+            width: 100%;
+            margin: 10px auto;
+            /*            border: 2px solid #d3d3d3;*/
+        }
+
+        /* add custom style class here */
+
+        .max-image-width {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+
+        <!-- This is an HTML comment. Find the comments below and follow the instructions. -->
+
+        <div id='map'>
+            <!-- Add your custom HTML here -->
+        </div>
+
+        <h1>Digitized Points, Lines, and Polygons on University of Kentuck Lexington Campus</h1>
+
+        <div id='map'>
+            <img src="Graphics_images/UK%20Campus%20Digitized.png" alt="Digitizing features on the Lexington campus" class="max-image-width">
+            <!-- custom CSS here -->
+            <br>
+            <!-- line break tag -->
+            <li><b><a href="graphics/NA%20Brewery%20Locations8000px.png">Link to high resolution map</a></b></li>
+            <li><b><a href="https://www.sciencedirect.com/science/article/pii/S2095263514000430">Link to research paper on university campus design</a></b></li>
+        </div>
+
+        <!-- Add you information below -->
+        <h2>Map created by: Tom Scholten, NMP MAP 671</h2>
+        <p>This project moved into a new cartographic area that involved the process georeferencing images (satellite, photos, basic pictures) that capture an area or portion of a “real-world” geographic area. A second cartographic technique involved creating new vector data using the Qgis suite of tool found in the Layer>Create Layer tab. An aerial photograph provided by a balloon camera on the campus of the University of Kentucky was georeferenced to the specific campus area and a raster GIS layer was generated that provided a source layer from which to digitize new vector data.
+            <p>Key lessons learned:</p>
+            <li>Applying a transformation to a static image</li>
+            <li>Creating control points of known locations on the static image</li>
+            <li>Using a Python script (provided in class material) to bulk load a variety of basemaps and reviewing these in the XYZ Tiles feature of Qgis</li>
+            <li>Using Georeferencer GDAL that allows manipulation of images and creating raster layers.</li>
+            <li>Working with unreferenced image with no coordinate information and using the GDAL Georeferencer (located in the Raster tab) to align it with a coordinate system</li>
+            <li>Adding multiple ground control points using Add Point feature (found in the Georefencer tool)</li>
+            <li>Creating vector data layers such as points, lines, and polygons using Qgis tools (Layer>Create Layer)</li>
+            Effort was also spent creating the proper visual hierarchy for the maps and ensuring an attractive map product. Coordinate reference system used is North America Equal Area (EPSG: 102008). Basemap: Open Street Map Map image created by: University of Kentucky Geography department (balloon photography) Vector file provided by University of Kentucky Facilities Management Information Services. Coordinate system: ESPG: 3857
+        </p>
+
+        <ul>
+            <!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+            <li><b><a href="geojson/NA_Brewery%20Locations.geojson">Link to GeoJSON file</a></b></li>
+            <li>See my projects on GitHub: <a href="https://github.com/Tscholten1?tab=repositories/">New Maps Plus</a></li>
+            <li>Visit my <a href='https://tscholten1.github.io/mapwurks/'>mapping portfolio</a>.</li>
+            <li><a href='https://en.wikipedia.org/wiki/Global_Internet_usage'>More information on world internet usage</a>.</li>
+            <li><a href="World%20Internet%20Usage%208000px.png">Link to high resolution map</a></li>
+
+        </ul>
+    </section>
+
+</body>
+
+</html>
