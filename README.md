@@ -1,2 +1,1 @@
-# MAP671-Module-06
-MAP671 Person Repo
+Digitized Points, Lines, and Polygons on University of Kentuck Lexington Campus
